@@ -1,0 +1,93 @@
+@import './reset.css';
+
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* .outerBlock{
+    width: 100%;
+    height: 100vh;
+    border: 5px solid blue;
+    background-color: dodgerblue;
+}
+
+.flexContainer{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: row;
+}
+
+.innerBlock{
+   width: 200px;
+   height: 200px;
+   border: 5px solid orange;
+   background-color: gold;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: space-between;
+   flex-direction: column;
+}
+
+.innerBlock2{
+    border: 5px solid green;
+    background-color: fuchsia;
+} */
+
+.outerBlock{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid blue;
+}
+
+.container1{
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.flex-elem1{
+    width: 100%;
+    border: 1px solid grey;
+}
+
+
+.flex-elem1>div{
+    border-right: 1px solid grey;
+}
+.flex-elem1>div+div{
+    border-right: 0px;
+}
+
+.flex-elem2>div{
+    border-bottom: 1px solid grey;
+}
+.flex-elem2>div+div{
+    border-bottom: 0px solid grey;
+}
+
+
+.container2{
+    display: flex;
+    height: 50px;
+}
+.flex-elem2{
+    width: 50%;
+}
+.container3{
+    display: flex;
+    flex-direction: column;
+}
+.flex-elem3{
+    width: 100%;
+    height:50%;
+    line-height:25px;
+}
+.flex-elem2+div{
+    height: inherit;
+    line-height: 50px;
+}
+
